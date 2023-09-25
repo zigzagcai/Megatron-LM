@@ -101,7 +101,8 @@ setuptools.setup(
         'Natural Language :: English',
         'Operating System :: OS Independent',
     ],
-    packages=['megatron.core', 'megatron.core.pipeline_parallel', 'megatron.core.tensor_parallel'], 
+    packages=find_packages(include=['megatron.core','megatron.core.models','megatron.core.transformer.custom_layers']),
+
     install_requires=install_requires,
 
     # Add in any packaged data.
