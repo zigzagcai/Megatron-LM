@@ -101,7 +101,7 @@ setuptools.setup(
         'Natural Language :: English',
         'Operating System :: OS Independent',
     ],
-    packages=find_packages(include=['megatron.core','megatron.core.models','megatron.core.transformer.custom_layers']),
+    packages=find_packages(include=['megatron.core.*','megatron.core.models','megatron.core.transformer.custom_layers']),
 
     install_requires=install_requires,
 
